@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DBMS Project - RaveBase</title>
+</head>
+
+<body>
+    <!-- Background Video -->
+    <div class="background">
+        <video autoplay loop muted playsinline id="bg-video">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+    </div>                          
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="container">
+        <nav class="nav" aria-label="Main Navigation">
+            <div class="logo">
+                <a href="index.html">RaveBase</a>
+            </div>
+            <div class="nav-items">
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section id="home">
+            <div class="heading">
+                <h1>Welcome to RaveBase</h1>
+                <p>
+                    We’re a group of students working together on a DBMS based Event Management System as part of our learning journey.
+                    Our goal is to understand how real-world applications handle data from event registrations to attendee management 
+                    by designing a fully functional database driven system.
+                    This project helps us apply what we've learned in class to a practical scenario, while building skills in teamwork,
+                    database design, and problem-solving.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h1>Events</h1>
+            <div class="container1">
+    <div class="slider-wrapper">
+       <div class="container1">
+    <div class="slider-wrapper">
+        <button class="prev-btn">&#10094;</button>
+        <div class="card-list">
+            <div class="card-item">
+                <img src="metallica.jpg" alt="Event Image" class="event-image">
+                <h2 class="eventname">Metallica</h2>
+                <p class="event-description">Join us for an unforgettable experience!<br>🗓️ 17th May, 7:00 PM</p>
+            </div>
+            <div class="card-item">
+                <img src="rock.jpg" alt="Event Image" class="event-image">
+                <h2 class="eventname">Rock Fest</h2>
+                <p class="event-description">Get ready for a rock-n-roll weekend!<br>🗓️ 18th May, 6:00 PM</p>
+            </div>
+            <div class="card-item">
+                <img src="jazz.jpg" alt="Event Image" class="event-image">
+                <h2 class="eventname">Jazz Night</h2>
+                <p class="event-description">A night full of smooth jazz and vibes.<br>🗓️ 19th May, 8:00 PM</p>
+            </div>
+            <div class="card-item">
+                <img src="edm.jpg" alt="Event Image" class="event-image">
+                <h2 class="eventname">EDM Festival</h2>
+                <p class="event-description">Dance the night away with the best DJs.<br>🗓️ 20th May, 9:00 PM</p>
+            </div>
+            <div class="card-item">
+                <img src="pop.jpg" alt="Event Image" class="event-image">
+                <h2 class="eventname">Pop Stars Concert</h2>
+                <p class="event-description">Catch your favorite pop artists live!<br>🗓️ 21st May, 7:30 PM</p>
+            </div>
+            <div class="card-item">
+                <img src="comedy.jpg" alt="Comedy Show Image" class="event-image">
+                <h2 class="eventname">Stand-Up Comedy</h2>
+                <p class="event-description">Laugh out loud with the best comedians in town!<br>🗓️ 23rd May, 6:30 PM</p>
+            </div>
+            <div class="card-item">
+                <img src="kids.jpg" alt="Children Show Image" class="event-image">
+                <h2 class="eventname">Kids Carnival</h2>
+                <p class="event-description">Fun games, colors, and magic for all the little stars!<br>🗓️ 24th May, 5:00 PM</p>
+            </div>
+            <div class="card-item">
+                <img src="drama.jpg" alt="Drama Night Image" class="event-image">
+                <h2 class="eventname">Drama Night</h2>
+                <p class="event-description">Experience a theatrical night filled with emotions and stories.<br>🗓️ 25th May, 7:30 PM</p>
+            </div>
+            <div class="card-item">
+                <img src="magic.jpg" alt="Magic Show Image" class="event-image">
+                <h2 class="eventname">Magic Show</h2>
+                <p class="event-description">A night of mystery, illusion, and jaw-dropping magic!<br>🗓️ 26th May, 6:00 PM</p>
+            </div>
+    </div>
+        <button class="next-btn">&#10095;</button>
+    </div>
+</div>
+
+</div>
+
+        </div>
+    </section>
+
+
+        <!-- Register Section -->
+        <section id="register" class="form_container register_section">
+            <div class="heading">
+                <h1>Register Here</h1>
+            </div>
+            <div class="form_area">
+                <p class="title">Event Registration</p>
+                <form action="connect.php" method="POST">
+                    <div class="form_group">
+                        <label class="sub_title" for="name">Name</label>
+                        <input placeholder="Enter your full name" id="name" name="name" class="form_style" type="text" required>
+                    </div>
+                    <div class="form_group">
+                        <label class="sub_title" for="date">Date</label>
+                        <input id="date" name="date" class="form_style" type="date" required>
+                    </div>
+                    <div class="form_group">
+                        <label class="sub_title" for="time">Time</label>
+                        <input id="time" name="time" class="form_style" type="time" required>
+                    </div>
+                    <div class="form_group">
+                        <label class="sub_title" for="event">Event Name</label>
+                        <input placeholder="Enter the event name" id="event" name="event" class="form_style" type="text" required>
+                    </div>
+                    <div class="form_group">
+                        <button class="btn" type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+<footer>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Team Members</h3>
+        <p>Name<br>1. Abhilash KM <br> 2. Anish Umesh Shetty <br> 3. Arnav Eluri <br> 4. Ganesh K <br> 5. Jeevan Vijeth Nigam <br></p>
+        <p class="copyright">© 2025 Team RaveBase. All rights reserved</p>
+      </div>
+      <div class="footer-center">
+        <h3>Location</h3>
+        <p>CSIT - A<br>Reva University <br> Bengaluru - 560064</p>
+      </div>
+      <div class="footer-right">
+        <div class="brand-logo">
+          <h2><a href="index.html">RaveBase</a></h2>
+          <div class="color-boxes">
+            <div class="box orange"></div>
+            <div class="box orange"></div>
+            <div class="box orange"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+  </footer>
+</footer>
+
+  <script>
+    window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("preloader").classList.add("hidden");
+            }, 1000); 
+        });
+
+    const cardList = document.querySelector('.card-list');
+const cards = document.querySelectorAll('.card-item');
+const prevButton = document.querySelector('.prev-btn');
+const nextButton = document.querySelector('.next-btn');
+
+let isMouseDown = false;
+let startX;
+let scrollLeft;
+
+// Get card width including gap
+const cardStyle = window.getComputedStyle(cards[0]);
+const cardGap = parseInt(cardStyle.marginRight || 30); // fallback
+const cardWidth = cards[0].offsetWidth + cardGap;
+
+// Button click scroll
+prevButton.addEventListener('click', () => {
+    cardList.scrollBy({
+        left: -cardWidth,
+        behavior: 'smooth'
+    });
+});
+
+nextButton.addEventListener('click', () => {
+    cardList.scrollBy({
+        left: cardWidth,
+        behavior: 'smooth'
+    });
+});
+
+// Mouse scroll (wheel) navigation
+cardList.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    cardList.scrollBy({
+        left: e.deltaY > 0 ? cardWidth : -cardWidth,
+        behavior: 'smooth'
+    });
+});
+
+// Mouse drag support
+cardList.addEventListener('mousedown', (e) => {
+    isMouseDown = true;
+    startX = e.pageX - cardList.offsetLeft;
+    scrollLeft = cardList.scrollLeft;
+    cardList.style.cursor = 'grabbing';
+});
+
+cardList.addEventListener('mouseleave', () => {
+    isMouseDown = false;
+    cardList.style.cursor = 'grab';
+});
+
+cardList.addEventListener('mouseup', () => {
+    isMouseDown = false;
+    cardList.style.cursor = 'grab';
+});
+
+cardList.addEventListener('mousemove', (e) => {
+    if (!isMouseDown) return;
+    e.preventDefault();
+    const x = e.pageX - cardList.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    cardList.scrollLeft = scrollLeft - walk;
+});
+
+
+
+
+
+
+
+</script>   
+</body>
+</html>
